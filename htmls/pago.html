@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago - Compra en Grande</title>
+    <link rel="stylesheet" href="../styles/pago.css">
+</head>
+<body>
+    <header>
+        <h1>Compra en Grande</h1>
+    </header>
+    
+    <section class="pago">
+        <h2>Detalles de Pago</h2>
+        <form action="procesar_pago.html" method="POST">
+            <!-- Información del Cliente -->
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="Correo">Correo electronico:</label>
+            <input type="email" id="Correo" name="Correo" required>
+
+            <label for="Edad">Edad:</label required>
+            <input type="number">
+
+            <!-- Botón de Confirmar Pago -->
+            <button type="submit">Confirmar Pago</button>
+        </form>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sección Sobre Nosotros */
+.sobre-nosotros, .artistas, .mision, .contacto, .advertencia {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.sobre-nosotros h2, .artistas h2, .mision h2, .contacto h2, .advertencia h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.sobre-nosotros p, .mision p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Sección de Artistas */
+.artistas-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.artista {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 300px;
+    text-align: center;
+}
+
+.artista img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.artista h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.artista p {
+    color: #666;
+}
+
+/* Sección de Contacto */
+.contacto a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .artistas-lista {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        margin: 0 0.5rem;
+    }
+
+    .sobre-nosotros h2, .artistas h2, .mision h2, .contacto h2 {
+        font-size: 1.5rem;
+    }
+}

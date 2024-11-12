@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte - Compra en Grande</title>
+    <link rel="stylesheet" href="../styles/galeriastyle.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Galería de Arte</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="galeria.html">Galería de Arte</a>
+        <a href="nosotros.html">Sobre Nosotros</a>
+    </nav>
+
+    <!-- Galería de Productos -->
+    <section class="galeria">
+        <h2>Nuestros Productos de Arte</h2>
+        <div class="productos">
+            <div class="producto" onclick="verProducto('Colibrí en Primavera', 'Acrílico sobre lienzo', 100, '../imagenes/colobri en primavera.jpeg')">
+                <img src="../imagenes/colobri en primavera.jpeg" alt="Colibrí en Primavera">
+                <h3>Colibrí en Primavera</h3>
+                <p>Acrílico sobre lienzo</p>
+                <p>Precio: $100</p>
+            </div>
+            <div class="producto" onclick="verProducto('Caminando en Familia', 'Óleo sobre lienzo', 150, '../imagenes/caminando en familia.jpeg')">
+                <img src="../imagenes/caminando en familia.jpeg" alt="Caminando en Familia">
+                <h3>Caminando en Familia</h3>
+                <p>Óleo sobre lienzo</p>
+                <p>Precio: $150</p>
+            </div>
+
+            <div class="producto" onclick="verProducto('El principito', 'Oleo sobre lienzo.', 120, '../imagenes/Principito.jpeg')">
+                <img src="../imagenes/Principito.jpeg" alt="Principito">
+                <h3>El Principito</h3>
+                <p>Oleo sobre lienzo</p>
+                <p>Precio: $120</p>
+            </div>
+
+            <div class="producto" onclick="verProducto('La guitarra de mau', 'Acuarela sobre lienzo.', 200, '../imagenes/la guitarra de mau.jpeg')">
+                <img src="../imagenes/la guitarra de mau.jpeg" alt="la guitarra de mau">
+                <h3>La guitarra de mau</h3>
+                <p>Acuarela sobre lienzo</p>
+                <p>Precio: $200</p>
+            </div>
+            <!-- Agrega más productos aquí según sea necesario -->
+        </div>
+    </section>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

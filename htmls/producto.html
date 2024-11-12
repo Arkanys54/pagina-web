@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto - Compra en Grande</title>
+    <link rel="stylesheet" href="../styles/productoStyle.css">
+</head>
+<body>
+    <header>
+        <h1>Compra en Grande</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="galeria.html">Galería de Arte</a>
+        <a href="nosotros.html">Sobre Nosotros</a>
+    </nav>
+
+    <!-- Sección de Detalles del Producto -->
+    <section class="detalle-producto">
+        <img id="productoImagen" alt="Imagen del Producto">
+        <div class="producto-info">
+            <h2 id="productoNombre"></h2>
+            <p id="productoDescripcion"></p>
+            <p>Precio: $<span id="productoPrecio"></span></p>
+            <button onclick="proceedToPayment()">Comprar</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Compra en Grande. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Obtener los parámetros de la URL
+        const params = new URLSearchParams(window.location.search);
+        const nombre = params.get('nombre');
+        const descripcion = params.get('descripcion');
+        const precio = params.get('precio');
+        const imagen = params.get('imagen');
+
+        // Asignar los valores a los elementos en la página
+        document.getElementById('productoNombre').textContent = nombre;
+        document.getElementById('productoDescripcion').textContent = descripcion;
+        document.getElementById('productoPrecio').textContent = precio;
+        document.getElementById('productoImagen').src = imagen;
+        document.getElementById('productoImagen').alt = nombre;
+    </script>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

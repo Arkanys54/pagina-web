@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra en Grande - Tienda de Arte</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <h1>Compra en Grande</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="#galeria">Inicio</a>
+        <a href="./galeria.html">Galería de Arte</a>
+        <a href="./nosotros.html">Sobre Nosotros</a>
+    </nav>
+
+    <!-- Banner Principal -->
+    <section class="banner">
+        <h2>Lleva el arte a tu hogar</h2>
+        <p>Encuentra arte original y único para cada rincón de tu hogar.</p>
+    </section>
+
+    <!-- Galería de Arte -->
+    <section id="galeria" class="galeria">
+        <h2>Nuestros Productos</h2>
+        <div class="productos">
+            <div class="producto" onclick="verProducto('Colibrí en Primavera', 'Acrílico sobre lienzo', 100, '../imagenes/colobri en primavera.jpeg')">
+                    <img src="../imagenes/colobri en primavera.jpeg" alt="Colibrí en Primavera">
+                    <h3>Colibrí en Primavera</h3>
+                    <p>Acrílico sobre lienzo. Inspirado en la belleza de la naturaleza.</p>
+            </div>
+            <div class="producto" onclick="verProducto('Caminando en Familia', 'Óleo sobre lienzo', 150, '../imagenes/caminando en familia.jpeg')">
+                    <img src="../imagenes/caminando en familia.jpeg" alt="Caminando en Familia">
+                    <h3>Caminando en Familia</h3>
+                    <p>Óleo sobre lienzo. Ideal para crear un ambiente acogedor.</p>
+            </div>
+            <div class="producto" onclick="verProducto('El principito', 'Oleo sobre lienzo.', 100, '../imagenes/Principito.jpeg')">
+                    <img src="../imagenes/Principito.jpeg" alt="Principito">
+                    <h3>El Principito</h3>
+                    <p>Oleo sobre lienzo. Para recordar la infancia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre los Artistas -->
+    <section id="artistas" class="artistas">
+        <h2>Conoce a nuestros artistas</h2>
+        <p>Nuestros artistas crean piezas únicas que capturan emociones y momentos especiales.</p>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonios">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <p>"Compré una pintura de esta tienda y realmente embellece mi sala. Muy satisfecho con la compra!"</p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Compra en Grande. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
