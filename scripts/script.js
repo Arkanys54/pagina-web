@@ -32,7 +32,18 @@ function proceedToPayment() {
 }
 
 
-function verProducto(nombre, descripcion, precio, imagen) {
-    const url = `producto.html?nombre=${encodeURIComponent(nombre)}&descripcion=${encodeURIComponent(descripcion)}&precio=${precio}&imagen=${encodeURIComponent(imagen)}`;
+function verProducto(nombre, descripcion, precio, imagen, lugar) {
+    var url;
+    if(lugar === true)
+    {
+        url = `./htmls/producto.html?nombre=${encodeURIComponent(nombre)}&descripcion=${encodeURIComponent(descripcion)}&precio=${precio}&imagen=${encodeURIComponent(imagen)}`;
+    }
+    else
+    {
+        url = `producto.html?nombre=${encodeURIComponent(nombre)}&descripcion=${encodeURIComponent(descripcion)}&precio=${precio}&imagen=${encodeURIComponent(imagen)}`;
+    }
+    
     window.location.href = url;
 }
+
+

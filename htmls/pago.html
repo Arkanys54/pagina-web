@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pago - Compra en Grande</title>
     <link rel="stylesheet" href="../styles/pago.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+        emailjs.init('ixz_BctkIb8npbFPU')
+    </script>
 </head>
 <body>
     <header>
@@ -12,22 +18,19 @@
     </header>
     
     <section class="pago">
-        <h2>Detalles de Pago</h2>
-        <form action="procesar_pago.html" method="POST">
-            <!-- Información del Cliente -->
-            <label for="nombre">Nombre Completo:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="Correo">Correo electronico:</label>
-            <input type="email" id="Correo" name="Correo" required>
-
-            <label for="Edad">Edad:</label required>
-            <input type="number">
-
-            <!-- Botón de Confirmar Pago -->
-            <button type="submit">Confirmar Pago</button>
-        </form>
+        <form id="form">
+            <div class="field">
+              <label for="from_name">Nombre</label>
+              <input type="text" name="from_name" id="from_name" required>
+            </div>
+            <div class="field">
+              <label for="email_id">Correo electronico:</label>
+              <input type="email" name="email_id" id="email_id" required>
+            </div>          
+            <input type="submit" id="button" value="Send Email">
+          </form>
     </section>
     
+    <script src="../scripts/correo.js"></script>
 </body>
 </html>

@@ -1,103 +1,118 @@
 /* Estilos generales */
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #f4f4f4;
-    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
 }
 
 /* Encabezado */
 header {
-    background-color: #333;
-    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     text-align: center;
+    background-color: #222;
+    color: white;
     padding: 1rem 0;
+    font-size: 1.5rem;
 }
 
-header h1 {
-    font-size: 2rem;
-}
-
-/* Sección de Pago */
+/* Contenedor del formulario */
 .pago {
+    width: 100%;
     max-width: 500px;
-    margin: 2rem auto;
+    background: white;
     padding: 2rem;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.pago h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    text-align: center;
+/* Campo del formulario */
+.field {
+    margin-bottom: 1.5rem;
+}
+
+.field label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
     color: #333;
 }
 
-/* Estilos del Formulario */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    font-weight: bold;
-    margin-top: 1rem;
-    color: #555;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"] {
+.field input[type="text"] {
+    width: 94%;
     padding: 0.8rem;
-    margin-top: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
     font-size: 1rem;
-    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus {
-    border-color: #333;
+.field input[type="email"] {
+    width: 94%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.field input[type="email"]:focus {
+    border-color: #007bff;
     outline: none;
 }
 
-/* Botón de Confirmar Pago */
-button[type="submit"] {
-    margin-top: 2rem;
+.field input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botón */
+#button {
+    width: 100%;
     padding: 0.8rem;
-    background-color: #333;
-    color: #fff;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
     border: none;
     border-radius: 5px;
-    font-size: 1.1rem;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-button[type="submit"]:hover {
-    background-color: #555;
+#button:hover {
+    background-color: #0056b3;
 }
 
-/* Responsividad */
-@media (max-width: 600px) {
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
     .pago {
         padding: 1.5rem;
     }
 
-    header h1 {
-        font-size: 1.5rem;
+    header {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .field label {
+        font-size: 0.9rem;
     }
 
-    .pago h2 {
-        font-size: 1.5rem;
+    .field input[type="text"] {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+    }
+
+    #button {
+        font-size: 0.9rem;
+        padding: 0.7rem;
     }
 }

@@ -43,14 +43,14 @@ nav a:hover {
 }
 
 /* Sección Sobre Nosotros */
-.sobre-nosotros, .artistas, .mision, .contacto, .advertencia {
+.sobre-nosotros, .artistas, .mision, .contacto, .advertencia, .desarrollo {
     max-width: 1000px;
     margin: 2rem auto;
     padding: 1rem;
     text-align: center;
 }
 
-.sobre-nosotros h2, .artistas h2, .mision h2, .contacto h2, .advertencia h2{
+.sobre-nosotros h2, .artistas h2, .mision h2, .contacto h2, .advertencia h2, .desarrollo h2{
     font-size: 2rem;
     margin-bottom: 1rem;
 }
